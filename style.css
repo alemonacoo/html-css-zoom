@@ -62,6 +62,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 10px;
 
 }
 .status{
@@ -70,9 +71,8 @@
     color: white;
     padding: 3%;
     font-size: 0.8rem;
+    border-radius: 10px;
 }
-
-
 
 
 /* Bottom */
