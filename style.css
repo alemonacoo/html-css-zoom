@@ -27,11 +27,15 @@
     
 }
 
-.cards{
+
+.cards-container{
+    display: flex;
     flex-basis: 80%;
     width: 90%;
-    background-color: blue;
     overflow-y: scroll;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .bottom{
@@ -41,4 +45,33 @@
     width: 100%;
     background-color: pink;
 }
+
+.card{
+    height: calc(100%/5);
+    width: calc(100%/7 - 4px);
+    margin-bottom: 4px;
+    border: solid black 1px;;
+    /* background-image: url("https://picsum.photos/700/500");
+    background-size: cover;
+    background-repeat: no-repeat; */
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.status{
+    width: 50%;
+    height: 20%;
+    background-color: rgba(160, 160, 160, 0.75);
+    position: absolute;
+    color: white;
+}
+
 
