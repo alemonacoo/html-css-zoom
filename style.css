@@ -10,9 +10,35 @@
 .zoom{
     display: flex;
     flex-direction: column;
+    position: relative;
     height: 100vh;
     width: 100%;
-    background-color: black;
+    background-color: grey;
+    align-items: center;
+    justify-content: center;
+}
+.buttons{
+    position: fixed;
+    right: 1%;
+    top:1%;
+    height: 3%;
+    width: 10%;
+    background-color: aqua;
+    
 }
 
+.cards{
+    flex-basis: 80%;
+    width: 90%;
+    background-color: blue;
+    overflow-y: scroll;
+}
+
+.bottom{
+    position: fixed;
+    bottom: 0;
+    height: 8%;
+    width: 100%;
+    background-color: pink;
+}
 
